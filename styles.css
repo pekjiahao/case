@@ -1,0 +1,117 @@
+
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: #F1DFAD;
+}
+#wrapper { background-color: #e2d2b0; 
+           width: 80%;
+		   margin: auto;
+           min-width: 850px;
+		   box-shadow: 6px 6px 6px;	   
+} 
+#leftcolumn ul { 	list-style-type: none;
+					text-align: center;
+					position: fixed;}
+					
+#leftcolumn a { text-decoration: none;
+				color: #9f8667;
+				font-weight: bold; }
+				
+#leftcolumn li{ padding-bottom: 8px;}
+
+#leftcolumn { float: left;
+	          width: 150px;
+			  padding-top: 20px;
+			  
+} 
+
+#rightcolumn { margin-left: 155px;
+               background-color: #f5f5dd;
+} 
+
+header { background-color: #d2b48c;
+        padding: 10px;
+		}
+		
+h2 { color: #341916; 
+     font-family: arial, sans-serif;
+	 margin-top: 8px;
+	 margin-bottom: 8px;
+}
+
+.content {padding: 20px 20px 0 20px; } 
+
+#floatright { margin: 10px;
+             float: right;
+			 padding-bottom: 10px;
+}
+
+#floatleft {	margin: 10px;
+				padding-right: 30px;
+				float: left;
+}
+
+
+footer {	background-color:#d2b48c;
+			font-size:70%;
+			font-style:italic;
+			text-align:center; 
+			padding-bottom:10px; 
+		}
+
+p {color: #341916}
+
+
+
+form {font-family: Arial, sans-serif;
+	 width: 350px;
+	 padding: 10px;
+	 color: #341916;}
+	 
+#drinkOptionForm label {	float: left;
+							clear: none;
+							display: block;
+							padding: 2px 1em 0 0;
+							margin-top: 0px;
+							margin-left: 2px;
+							text-align: left;
+}
+
+label { float: left; clear: left;
+	    display: block; width: 100px; 
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+		
+
+		
+input.textarea { margin-top: 10px; 
+                  display: block;}
+				  
+#mySubmit { margin-left: 0px; }
+
+
+#mtable { 
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+	}
+	
+#mtable	tr:nth-of-type(odd) { background-color: #d2b48c;
+							  font-color: #341916
+							 }
+							 
+
+		 
+input[type=radio], input.radio {
+  float: left;
+  clear: none;
+  margin: 4px 0 0 2px;
+}
+
+input.menuCountInput[type=number], input.menuCountInput[type=text] {
+	width: 40px;
+}
+
+input#grandTotal[type=text] {
+	width: 80px;

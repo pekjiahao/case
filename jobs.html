@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="validate1.js"></script>
+	<title>JavaJam - Jobs</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id = "wrapper">
+		<header>
+		<center><img src="javalogo.jpg" maxwidth = "500" alt="Java"> </center>
+		</header>
+		<div id="leftcolumn">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="jobs.html">Jobs</a></li>
+			</ul>
+		</div>
+		
+		<div id="rightcolumn">
+			
+			<div class="content">
+				<h2>Jobs at JavaJam</h2>
+				<p>Want to work at JavaJam? Fill out the form below to start your application.
+					Required fields are marked with an asterick*</p>
+					
+				<form method="post" action="show_post.php">
+				  <label for="myName">*Name:</label>
+				  <input type="text" name="myName" id="myName" required>
+				  
+				  <label for="myEmail">*E-mail:</label>
+				  <input type="text" name="myEmail" id="myEmail" required>
+				  
+				  <label for="myStartDate">Start Date:</label>
+				  <input type="date" name="myStartDate" id="myStartDate">
+				  
+				  <label for="myExperience">*Experience:</label>
+				  <textarea name="myExperience" id="myExperience" rows="2" cols="25" required></textarea>
+				  
+				  <input id="mySubmit" type="submit" value="Apply Now">
+				</form>
+
+			</div>
+		</div>
+
+		
+	<footer>
+			<small><i>copyright &copy; 2018 JavaJam Coffee House<br><a href="mailto:jiahao@pek.com">jiahao@pek.com</a>
+			</i></small>
+		</footer>
+	</div>
+	      
+		  
+		  <script>      var namefield = document.getElementById("myName");
+		 			    var emailfield = document.getElementById("myEmail");
+      					var datefield = document.getElementById("myStartDate");
+						var expfield = document.getElementById("myExperience");
+      					    namefield.addEventListener("change", checkname, false);
+      					    emailfield.addEventListener("change", checkemail, false);
+							datefield.addEventListener("change", checkdate, false);
+							expfield.addEventListener("change", checkexp, false);
+</script>
+		  
+
+
+	
+</body>
+</html>
