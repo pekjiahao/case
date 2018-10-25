@@ -1,21 +1,23 @@
-function changePrice(divId, drinkOptions) {
-    console.log(drinkOptions)
-	console.log(divId+"Button")
+function changePrice(divtag, drinksizeid) {
+    console.log(drinksizeid)
+	console.log(divtag+"Button")
     var outputString ="";
-    outputString += "<form method=\"post\" action=\"show_post.php\">\n";
+    outputString += "<form method=\"post\" action=\"menuUpdate.php\">\n";
 
-    for (var i = 0; i<drinkOptions.length; i++) {
-        outputString += "<label id=\'updatePrice\' for=\"amount\">"
-        outputString += drinkOptions[i].name;
+    for (var i = 0; i<drinksizeid.length; i++) {
+        outputString += "<label id=\'updatePrice\' for=\"price\">"
+        outputString += drinksizeid[i].name;
         outputString += "</label>";
-        outputString += "<input type=\"text\" name=\"amount\" id=\"amount\" value = \"$"
-        outputString += drinkOptions[i].price;
+        outputString += "<input type=\"text\" name=\"";
+		outputString += drinksizeid[i].drinksizeid;
+		outputString += "\" id=\"price\" value = \"$"
+        outputString += drinksizeid[i].price ;
         outputString += "\" required>";
 
     }
     outputString += "</form>";
-    document.getElementById(divId).innerHTML = outputString;
+    document.getElementById(divtag).innerHTML = outputString;
 	
-	document.getElementById(divId+"Button").innerHTML = "<input type=\"submit\" value=\"Submit\">";
+	document.getElementById(divtag+"Button").innerHTML = "<input type=\"submit\" value=\"Submit\">";
 
 }

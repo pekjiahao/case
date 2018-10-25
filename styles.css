@@ -34,7 +34,7 @@ header { background-color: #d2b48c;
 		
 h2 { color: #341916; 
      font-family: arial, sans-serif;
-	 margin-top: 8px;
+	 margin-top: 0px;
 	 margin-bottom: 8px;
 }
 
@@ -103,7 +103,7 @@ input.textarea { margin-top: 10px;
 	 						  padding-left: 5px;
 							 }
 							 
-
+#mtable tbody{ 
 		 
 input[type=radio], input.radio {
   float: left;

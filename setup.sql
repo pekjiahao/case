@@ -1,5 +1,5 @@
-create schema javajam;
-USE javajam;
+
+USE f36ee;
 
 create table drinks
 (
@@ -17,6 +17,24 @@ create table drinksize
   drinkid int unsigned not null,
   FOREIGN KEY (drinkid) REFERENCES drinks(drinkid)
 );
+
+create table orders
+(
+	orderid int unsigned not null auto_increment primary key,
+	drinksizeid int unsigned not null,
+	quantity int unsigned not null,
+	price float(5,2) not null,
+	FOREIGN KEY (drinksizeid) REFERENCES drinksize(drinksizeid)
+);
+	
+
+insert into orders values 
+						  (1, 1, 5, 5.60),
+						  (2, 2, 45, 3.50),
+						  (3, 3, 9, 5.00),
+						  (4, 4, 2, 4.00),
+						  (5, 5, 10, 5.00);
+
 
 insert into drinks values
                           (1,"Just Java", "Regular house blend, decaffeinated coffee, or flavor of the day.", "justJavaDiv"),
