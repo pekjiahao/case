@@ -17,7 +17,7 @@
     $price = doubleval($price);
   }
 
-   $db = new mysqli('localhost', 'f36ee', 'f36ee', 'f36ee');
+   $db = new mysqli('localhost', 'pekjiahao', '9343738a', 'javajam');
 
   if (mysqli_connect_errno()) {
      echo "Error: Could not connect to database.  Please try again later.";

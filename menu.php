@@ -35,7 +35,7 @@
 			<table id="mtable">
 
 				<?php
-				$db = new mysqli('localhost', 'f36ee', 'f36ee', 'f36ee');
+				$db = new mysqli('localhost', 'pekjiahao', '9343738a', 'javajam');
 
 				if (mysqli_connect_errno()) {
 					echo 'Error: Could not connect to database.  Please try again later.';
@@ -95,7 +95,11 @@
 
     </div>
 
-    <?php include 'footer.php' ?>
+    <footer>
+        <small><i>Copyright &copy; 2018 JavaJam Coffee House
+            </i></small><br>
+        <small><i>jiahao@pek.com</a></i></small>
+    </footer>
 
 </div>
 </body>
